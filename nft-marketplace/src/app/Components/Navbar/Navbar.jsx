@@ -54,7 +54,9 @@ export default function Navbar() {
             </ul>
             {/* Open Modal */}
             {loginModal && (
-          
+                <div className='absolute top-0 w-full h-full bg-white'>
+asdf
+                </div>
 
             )}
 
