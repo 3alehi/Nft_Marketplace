@@ -1,4 +1,11 @@
+'use client'
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import Nft from '../../data/Nft'
 
 export default function Header() {
   return (
@@ -33,11 +40,30 @@ Get Started
   </div>
 
         </div>
-        <div className='bg-red-950'>1</div>
+        <section className='py-12'>
+      <Swiper
+        navigation
+        modules={[Navigation, Autoplay]} // اضافه کردن Autoplay
+        autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay تنظیمات
+        onSwiper={swiper => console.log(swiper)}
+        className='h-96 w-full rounded-lg'
+      >
+        {Nft.map((data, index) => (
+          <SwiperSlide key={index}>
+            <div className='flex h-full w-full items-center justify-center'>
+              <img src={data.src} alt="" />
+              
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
+
+        </div>
 
 
 
 
-    </div>
+   
   )
 }
