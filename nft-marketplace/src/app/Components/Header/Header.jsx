@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <div className='my-28 mx-80 grid grid-cols-2 max-md:grid-cols-1 max-2xl:mx-16 max-xl:mx-10 max-md:my-20'>
       <div className='flex justify-center flex-col'>
-        <h1 className='font-mono text-[50px] max-xl:text-[25px]'>Discover <br  className='max-xl:hidden'/> digital art & <br className='max-xl:hidden' /> Collect NFTs</h1>
+        <h1 className='font-mono text-[50px] max-xl:text-[25px]'>Discover <br className='max-xl:hidden' /> digital art & <br className='max-xl:hidden' /> Collect NFTs</h1>
         <p className='text-[25px] leading-12 font-mono my-5 max-xl:text-[15px] '>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
 
         <div className='grid grid-cols-2 max-md:grid-cols-1 m-4 my-8'>
@@ -42,8 +42,8 @@ export default function Header() {
       </div>
       <section className='py-12 max-sm:grid max-sm:row-start-1'>
         <Swiper
-          
-          modules={[ Autoplay]} // اضافه کردن Autoplay
+
+          modules={[Autoplay]} // اضافه کردن Autoplay
           autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay تنظیمات
           className='h-96 w-full rounded-lg'
         >
