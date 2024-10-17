@@ -12,6 +12,11 @@ module.exports = {
         foreground: "var(--foreground)",
         bgBtn:"#A259FF",
       },
+
+      screens: {
+        'xs': '304px',   // سایز مخصوص 304px
+        'sm-custom': '568px',  // سایز مخصوص 568px
+      },
     },
   },
   plugins: [],
